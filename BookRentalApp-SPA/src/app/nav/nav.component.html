@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary" style="height:70px;">
+  <div class="container">
+      <a class="navbar-brand">Angular App</a>
+  
+      <ul  class="navbar-nav mr-auto">
+        <li class="nav-item active"  routerLinkActive="active">
+          <a class="nav-link" >Rental Status </a>
+        </li>
+        <li class="nav-item active"  routerLinkActive="active">
+          <a class="nav-link" >Admin</a>
+        </li>
+      </ul>
+
+      
+      
+      <ul *ngIf="!loggedin()" class="navbar-nav mr-auto">
+        <li class="nav-item active"  routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/register']" >Register </a>
+        </li>
+        <li class="nav-item active"  routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/login']" >Login</a>
+        </li>
+      </ul>
+      <div *ngIf="loggedin()" >
+        <ul class="navbar-nav mr-auto">
+          <li  class="nav-item active"  routerLinkActive="active">
+            <a >welcome  {{ authsrvc.decodetoken?.unique_name}} </a>  
+          </li>
+          <li  class="nav-item active"  routerLinkActive="active">
+            <a class="nav-link btn btn-secondary" (click)="logout()" >Logout</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+ 
+  
+</nav>

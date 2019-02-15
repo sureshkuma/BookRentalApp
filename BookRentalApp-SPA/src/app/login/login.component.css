@@ -1,0 +1,24 @@
+.form-signin {
+        width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #8080802e;
+    height: 300px;
+}
+
+.login {
+    position: relative;
+    top: 20px;
+    left: 88px;
+    width: 110px;
+}
+
+.txtxss {
+    margin-bottom:14px;
+}
+
+.logindv {
+    margin-top:25px;
+}
