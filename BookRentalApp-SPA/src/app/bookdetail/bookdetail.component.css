@@ -1,0 +1,72 @@
+.titlecss {
+    position: relative;
+    top: 10px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+.descss {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+.imgdiv {
+    padding: 20px;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+.contentdiv {
+    position: relative;
+    top: 180px;
+    padding: 0;
+}
+
+.titlecss {
+    text-align: center;
+    font-size: 25px;
+    color: darkred;
+    font-weight: 400;
+}
+.descriptdiv {
+    position: inherit;
+    top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidediv {
+    border-left: 1px solid gainsboro;
+    padding: 22px;
+    padding-top: 0;
+    position: relative;
+    top: 46px;
+}
+.example-full-width {
+    width: 70%;
+}
+
+.paracss {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 57px;
+}
+.adminbtn{
+        padding: 20px;
+    margin-left: 70px;
+}
+.rentldurpric {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: darkred;
+    position: relative;
+    top: 6px;
+}

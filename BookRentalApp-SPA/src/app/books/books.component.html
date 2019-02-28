@@ -1,0 +1,83 @@
+<div class="container-fluid" style="    background-color: white;
+margin-top: 80px;
+min-height: 550px; " >
+    <div class="row"> 
+        <div class="col-sm-6" style="margin-top: 90px;">
+       
+          <a class="createcss bg-success" [routerLink]="['create']" >Create <i class="material-icons plucss">
+              add
+              </i></a>
+          <mat-list style="border:1px solid #8080804a;">
+            <mat-list-item>
+                <div class="row">
+                    <div class="col-sm-5">
+                      <p>Sceret of Success</p>
+                    </div>
+                    <div class="col-sm-7" style="position: relative;
+                    left: 250px;">
+                    <div class="rowscss">
+                        <button mat-button class="bg-primary" (click)="BookDetail()">detail<i class="material-icons icon-css">date_range</i></button>
+                        <button mat-button class="bg-success" (click)="BookEdit()">Edit<i class="material-icons  icon-css1">edit </i></button>
+                        <button mat-button class="bg-warning" (click)="DeleteBook()">Delete <i class="material-icons  icon-css2"> delete_sweep</i></button>
+                    </div>
+                     
+                    </div>  
+                  </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row">
+                    <div class="col-sm-5">
+                      <p>True Love Story</p>
+                    </div>
+                    <div class="col-sm-7" style="position: relative;
+                    left: 250px;">
+                    <div class="rowscss">
+                        <button mat-button class="bg-primary" (click)="Genredetail()">detail<i class="material-icons icon-css">date_range</i></button>
+                        <button mat-button class="bg-success" (click)="EditGenre()">Edit<i class="material-icons  icon-css1">edit </i></button>
+                        <button mat-button class="bg-warning" (click)="DeleteGenre()">Delete <i class="material-icons  icon-css2"> delete_sweep</i></button>
+                    </div>
+                     
+                    </div>  
+                  </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row">
+                    <div class="col-sm-5">
+                      <p>RichDad&poorDad</p>
+                    </div>
+                    <div class="col-sm-7" style="position: relative;
+                    left: 250px;">
+                    <div class="rowscss">
+                        <button mat-button class="bg-primary" (click)="Genredetail()">detail<i class="material-icons icon-css">date_range</i></button>
+                        <button mat-button class="bg-success" (click)="EditGenre()">Edit<i class="material-icons  icon-css1">edit </i></button>
+                        <button mat-button class="bg-warning" (click)="DeleteGenre()">Delete <i class="material-icons  icon-css2"> delete_sweep</i></button>
+                    </div>
+                     
+                    </div>  
+                  </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row">
+                    <div class="col-sm-5">
+                      <p>Titans of Heros</p>
+                    </div>
+                    <div class="col-sm-7" style="position: relative;
+                    left: 250px;">
+                    <div class="rowscss">
+                        <button mat-button class="bg-primary" (click)="Genredetail()">detail<i class="material-icons icon-css">date_range</i></button>
+                        <button mat-button class="bg-success" (click)="EditGenre()">Edit<i class="material-icons  icon-css1">edit </i></button>
+                        <button mat-button class="bg-warning" (click)="DeleteGenre()">Delete <i class="material-icons  icon-css2"> delete_sweep</i></button>
+                    </div>
+                     
+                    </div>  
+                  </div>
+            </mat-list-item>
+          
+          </mat-list>
+  
+        </div>
+        <div class="col-sm-6" style="margin-top: 90px;">
+          <router-outlet></router-outlet>
+        </div>
+    </div>
+  </div>

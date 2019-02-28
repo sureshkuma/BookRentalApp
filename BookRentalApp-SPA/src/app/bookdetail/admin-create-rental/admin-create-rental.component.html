@@ -1,0 +1,78 @@
+<div class="container" style="       background-color: white;
+margin-top: 80px;
+min-height: 550px;
+max-width: 500px !important; ">
+    <form>
+      <div>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Genre">
+            </mat-form-field>
+      </div>
+     
+      <mat-form-field>
+          <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required [matAutocomplete]="autoGroup">
+            <mat-autocomplete #autoGroup="matAutocomplete">
+              <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                <mat-option *ngFor="let name of group.names" [value]="name">
+                  {{name}}
+                </mat-option>
+            </mat-optgroup>
+          </mat-autocomplete>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required [matAutocomplete]="autoGroup">
+              <mat-autocomplete #autoGroup="matAutocomplete">
+                <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                  <mat-option *ngFor="let name of group.names" [value]="name">
+                    {{name}}
+                  </mat-option>
+              </mat-optgroup>
+            </mat-autocomplete>
+          </mat-form-field>
+      
+    <!-- <div> 
+        <mat-form-field>
+            <input 
+          [typeaheadAsync]="true"
+          [typeahead]="dataSource"
+          (typeaheadLoading)="changeTypeaheadLoading($event)"
+          (typeaheadOnSelect)="typeaheadOnSelect($event)"
+          [typeaheadOptionsLimit]="7"
+          [typeaheadMinLength]="3"
+          typeaheadOptionField="name"
+          placeholder="Locations loaded with timeout"
+          class="form-control">
+    <div *ngIf="typeaheadLoading">Loading</div>
+          </mat-form-field>
+    </div>
+     
+      <div>
+          <mat-form-field>
+              <input [(ngModel)]="asyncSelected"
+            [typeaheadAsync]="true"
+            [typeahead]="dataSource"
+            (typeaheadLoading)="changeTypeaheadLoading($event)"
+            (typeaheadOnSelect)="typeaheadOnSelect($event)"
+            [typeaheadOptionsLimit]="7"
+            [typeaheadMinLength]="4"
+            typeaheadOptionField="name"
+            placeholder="Locations loaded with timeout"
+            class="form-control">
+      <div *ngIf="typeaheadLoading">Loading</div>
+            </mat-form-field>
+      </div>
+      -->
+      <div>
+          <mat-form-field class="example-full-width" >
+              <mat-select placeholder="Duration" [(ngModel)]="selectedValue" name="food">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+     <div class="row">
+    <button type="button" class="bg-success" mat-button (click)="CheckAvailbility()"></button>
+     </div>
+      </form>
+</div>

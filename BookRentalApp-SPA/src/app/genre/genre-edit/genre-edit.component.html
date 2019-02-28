@@ -1,0 +1,15 @@
+<form #form="ngForm" (ngSubmit)="UpdateGenre(form)">
+  <div class="container-fluid genrecss">
+      <p>Edit Genre</p>
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Genre name" required name="genrename" ngModel >
+        </mat-form-field>
+        <div class="row btndiv">
+            <button mat-button class="bg-success mr-2" type="submit">Update</button>
+            <button mat-button class="bg-danger" type="button" (click)="Cancel()">Cancel</button>
+        </div>
+        
+  </div>
+</form>
+
+

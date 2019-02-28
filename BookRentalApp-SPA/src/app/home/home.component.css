@@ -1,0 +1,27 @@
+.hedangcss {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+.bookcss {
+    border: 1px solid yellow;
+    padding: 0;
+}
+
+.titlecss {
+    position: relative;
+    top: 10px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+.descss {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}

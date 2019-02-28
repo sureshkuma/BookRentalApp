@@ -1,0 +1,14 @@
+<form #form="ngForm" (ngSubmit)="CreateGenre(form)">
+    <div class="container-fluid genrecss">
+        <p>New Genre</p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Genre name" required name="genrename" ngModel >
+          </mat-form-field>
+          <div>
+              <button mat-button class="bg-success" type="submit">Create</button>
+          </div>
+          
+    </div>
+</form>
+
+

@@ -1,0 +1,24 @@
+ .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 36%;
+    position: relative;
+    top: 110px;
+    margin: 0 auto;
+    border: 0.2px solid #80808057;
+    padding: 35px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .example-full-width {
+    width: 70%;
+  }
+  
+  .btncss {
+    position: relative;
+    right: 122px;
+    top: 50px;
+    min-width: 100px;
+    line-height: 44px;
+  } 

@@ -1,9 +1,38 @@
-<form class="form-signin" #form="ngForm" (ngSubmit)="Login(form)">
-  <div class="logindv"> 
-      <input class="form-control txtxss mr-sm-2" type="text" placeholder="Username" ngModel required name="username" >
-      <input class="form-control  mr-sm-2" type="Password" placeholder="Password" ngModel required name="password" >
-      <button class="btn btn-success login my-2 my-sm-0" type="submit">Login</button>
-
+<div class="container" style="background-color: white;margin-top: 80px;min-height:550px;">
+  <h1 class="logincss">Login Page</h1>
+  <div class="row">
+    <div class="col-sm-6">
+        <form class="example-form" #form="ngForm" (ngSubmit)="loginform(form)">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="user name" required name="username" ngModel>
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="password" type="password" required name="password" ngModel >
+            </mat-form-field>
+            <button type="submit"  mat-raised-button class="bg-success btncss">Login</button>
+          </form>
+    </div>
+  <div class="">
+    <hr>
   </div>
- 
-</form>
+   
+    <div class="col-sm-6 btnlogin ">
+        <hr width="1" size="50">
+      <div class="row">
+        <div class="col-sm-4">
+          <button type="button" mat-raised-button class="btn btn-outline-success">Facebook</button>
+        </div>
+        <div class="col-sm-4">
+            <button type="button" mat-raised-button class="btn btn-outline-danger">Gmail</button>
+        </div>
+        <div class="col-sm-4">
+            <button type="button" mat-raised-button class="btn btn-outline-warning">twitter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

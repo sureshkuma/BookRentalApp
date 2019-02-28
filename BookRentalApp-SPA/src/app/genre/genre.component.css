@@ -1,0 +1,41 @@
+.hedangcss {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+.icon-css {
+    position: relative;
+    font-size: 17px;
+    bottom: 3px;
+}
+.icon-css1{
+    position: relative;
+    font-size: 18px;
+    bottom: 3px;
+    left: 5px;
+}
+.icon-css2 {
+    position: relative;
+    font-size: 20px;
+    bottom: 3px;
+    left: 1.5px;
+}
+
+.btndiv {
+    position: relative;
+    left: 100px;
+}
+.createcss {
+    padding: 7px;
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    color: aliceblue;
+    padding-left: 14px;
+}
+
+.plucss {
+    position: relative;
+    top: 6px !important;
+}

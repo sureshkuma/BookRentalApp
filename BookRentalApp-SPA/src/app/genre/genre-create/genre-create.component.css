@@ -1,0 +1,11 @@
+.genrecss {
+    padding: 50px;
+    border: 1px solid #ffc107;
+    position: relative;
+    top: 30px;
+    padding-left: 90px;
+}
+
+.example-full-width {
+    width: 70%;
+  }

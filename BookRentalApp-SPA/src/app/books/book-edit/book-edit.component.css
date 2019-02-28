@@ -1,0 +1,24 @@
+.btndiv {
+    position: relative;
+    left: 101px;
+  }
+
+  .bookcrtcss {
+    margin-top: 10px;
+    text-align: center;
+    width: 500px;
+    height: 730px;
+    border: 1px solid #ffc107a8;
+}
+
+.example-full-width {
+    width: 70%;
+}
+
+.btncss {
+    position: relative;
+    right: 156px;
+    top: 49px;
+    min-width: 92px;
+    line-height: 40px;
+  } 

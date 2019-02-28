@@ -1,0 +1,42 @@
+<div class="container bookcrtcss">
+  <form #form="ngForm" class="" (ngSubmit)="CreateBook(form)">
+      <h1>Edit Book</h1>
+      <hr>
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Book name" required name="bookname" ngModel >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Image Url" required name="imgurl" ngModel >
+          </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="descripation"></textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Cost" required name="cost" ngModel >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Title" required name="title" ngModel >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Pages" required name="pages" ngModel >
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Author" required name="author" ngModel >
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Genre" [(ngModel)]="selectedValue" name="food">
+                      <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" style="position: relative; "> 
+                      <input matInput placeholder="Publisher" required name="publisher" ngModel >
+                    </mat-form-field>
+                   
+                    <div class="row btndiv">
+                      <button mat-button class="bg-success mr-2" type="submit">Update</button>
+                      <button mat-button class="bg-danger" type="button" (click)="Cancel()">Cancel</button>
+                  </div>
+  </form>
+</div>

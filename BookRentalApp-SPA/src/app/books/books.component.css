@@ -1,0 +1,19 @@
+.rowscss {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.createcss {
+    padding: 7px;
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    color: aliceblue;
+    padding-left: 14px;
+}
+
+.plucss {
+    position: relative;
+    top: 6px !important;
+}

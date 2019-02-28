@@ -1,3 +1,40 @@
-<p>
-  register works!
-</p>
+ <form class="example-form" #form="ngForm" (ngSubmit)="Registerform(form)">
+   <h1>Register For User</h1>
+   <hr>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="First name" required name="firstname" ngModel >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="last name" value="" required ngModel name="lastname">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" value="" appEmail  required ngModel name="inptemail">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Phone number" required ngModel name="phonenum">
+  </mat-form-field>
+  <mat-form-field  class="example-full-width">
+    <input matInput [matDatepicker]="picker" required ngModel name="dtofbirth" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+  <mat-form-field  class="example-full-width">
+    <select matNativeControl required ngModel name="dropselcted" placeholder="select value" value="PayForRental" >
+      <option value="PayForRental">PayForRental</option>
+      <option value="Member">Member</option>
+      <option value="Customer">Customer</option>
+      <option value="SuperAdmin">SuperAdmin</option>
+    </select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="password" type="password" appCompare="verify" parent='true' required ngModel name="password">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" style="position: relative;
+  left: 50px;">
+    <input matInput placeholder=" confirm password" type="password" appCompare="password" parent='false' required ngModel name="cnrmpassword">
+  </mat-form-field>
+  <button type="submit" [disabled]="!form.valid" mat-raised-button class="bg-success btncss">Register</button>
+</form> 
+
